@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Gayatri Das Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-  
+
 body{
-font-family: 'poppins', sans-serif;
-background: linear-gradient(-45deg, #000000,#0f2027,#203a43,#2c5364);
-background-size: 400% 400%;
-animation: gradientBG 12s ease infinite;
+font-family:'Poppins', sans-serif;
+background: linear-gradient(-45deg,#000000,#0f2027,#203a43,#2c5364);
+background-size:400% 400%;
+animation:gradientBG 12s ease infinite;
 color:white;
 text-align:center;
 margin:0;
 }
 
-  @keyframes gradientBG{
-0%{
-background-position:0% 50%;
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
-50%{
-background-position:100% 50%;
+
+nav{
+background:black;
+padding:15px;
+position:sticky;
+top:0;
 }
-100%{
-background-position:0% 50%;
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
 }
-}
-  
+
 header{
 padding:40px;
 }
@@ -35,6 +47,11 @@ padding:40px;
 img{
 width:150px;
 border-radius:50%;
+}
+
+.name{
+font-size:50px;
+color:#00c6ff;
 }
 
 .projects{
@@ -70,18 +87,18 @@ section{
 margin:40px;
 }
 
-input,textarea{
-width:250px;
-padding:10px;
-margin:5px;
-border-radius:5px;
-border:none;
+footer{
+margin-top:40px;
+padding:20px;
+background:black;
 }
 
 </style>
+
 </head>
 
 <body>
+
 <nav>
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
@@ -93,9 +110,10 @@ border:none;
 
 <img src="https://via.placeholder.com/150">
 
-<h1 style="font-family:Poppins; color:blue; font-size:50px;">
+<h1 class="name">
 Gayatri <br> Das
 </h1>
+
 <p>IT Student | Developer</p>
 
 <a href="resume.pdf">
@@ -104,7 +122,17 @@ Gayatri <br> Das
 
 </header>
 
-<section>
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am an IT student passionate about programming, web development, and building useful applications.
+</p>
+
+</section>
+
+<section id="projects">
 
 <h2>Projects</h2>
 
@@ -129,19 +157,28 @@ Gayatri <br> Das
 
 </section>
 
-<section>
+<section id="skills">
 
-<h2>Contact Me</h2>
+<h2>Skills</h2>
 
-<form>
-<input type="text" placeholder="Your Name"><br>
-<input type="email" placeholder="Your Email"><br>
-<textarea placeholder="Message"></textarea><br>
-<button type="submit">Send</button>
-</form>
+<p>HTML • CSS • Python • Flutter • Git</p>
 
 </section>
 
-</body>
-</html>
+<section id="contact">
 
+<h2>Contact</h2>
+
+<p>Email: yourgmail@gmail.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Gayatri Das</p>
+
+</footer>
+
+</body>
+
+</html>
