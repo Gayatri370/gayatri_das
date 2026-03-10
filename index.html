@@ -5,14 +5,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 <head>
 <style>
+  
 body{
 font-family: 'poppins', sans-serif;
-background:blue;
+background: linear-gradient(-45deg, #008080, #004e92, #00c6ff, #00bfa6);
+background-size: 400% 400%;
+animation: gradientBG 10s ease infinite;
 color:white;
 text-align:center;
 margin:0;
 }
 
+  @keyframes gradientBG{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+  
 header{
 padding:40px;
 }
